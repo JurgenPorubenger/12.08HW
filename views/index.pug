@@ -1,0 +1,15 @@
+- var title = ''
+
+html
+    head
+        style
+            include stylesheet/styles.css
+    body
+        form(action="/api" method="post")
+            input(type="text" name="login")
+            input(type="number" name="pwd")
+            button(type="submit" class="btn") Add to list!
+        form(action="/users" method="post")
+            button(type="submit" class="btn") Show list!
+            script
+                include javascripts/main.js
