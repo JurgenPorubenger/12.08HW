@@ -10,7 +10,8 @@ router.post('/', function(req, res, next) {
         // console.log(data);  // выводим считанные данные
     });
     console.log(req.body.login, req.body.pwd);
-    res.render('index');
+    // res.render('index');
+    res.redirect('/')
 });
 
 module.exports = router;
